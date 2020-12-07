@@ -14,6 +14,22 @@ $RECYCLE.BIN/
 *.msm
 *.msp
 
+# Compile sources
+game/obj/*
+ref_gl/obj/*
+win32/obj/*
+build/*
+
+#Ignore Vs files
+*.aps
+*.sln
+*.v12.suo
+*.sdf
+*.opensdf
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+
 # =========================
 # Operating System Files
 # =========================
@@ -26,8 +42,7 @@ $RECYCLE.BIN/
 .LSOverride
 
 # Icon must ends with two \r.
-Icon
-
+Icon
 # Thumbnails
 ._*
 
