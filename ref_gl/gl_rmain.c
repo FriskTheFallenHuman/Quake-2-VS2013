@@ -133,6 +133,7 @@ cvar_t	*vid_fullscreen;
 cvar_t	*vid_gamma;
 cvar_t	*vid_ref;
 
+#ifdef REF_GL_EXPORTS
 /*
 =================
 R_CullBox
@@ -1690,3 +1691,5 @@ void Com_Printf (char *fmt, ...)
 }
 
 #endif
+
+#endif // REF_GL_EXPORTS
