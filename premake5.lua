@@ -1,6 +1,6 @@
 -- Defined this before calling our projects
 workspace "Engine"
-	language "C"
+	language "C++"
 	startproject "launcher"
     configurations { "Debug", "Release" }
 

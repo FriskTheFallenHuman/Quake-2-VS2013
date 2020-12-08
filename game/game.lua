@@ -3,7 +3,7 @@
 project "game"
 	kind "SharedLib"
 	characterset "MBCS"
-    language "C"
+    language "C++"
 
 	targetdir ( "../build/game" )	-- Put our generated dll here
 	targetname ( "gamex86" )
@@ -16,13 +16,13 @@ project "game"
 
 	files {
 		"*.h", 
-		"*.c", 
+		"*.cpp", 
 		"game.def" 
 	}
 
 	vpaths {
 	   ["Header Files"] = "*.h",
-	   ["Source Files"] = "*.c",
+	   ["Source Files"] = "*.cpp",
 	   ["Resource Files"] = "game.def"	-- This is requiered by the engine to properly load the game dll
 	}
 

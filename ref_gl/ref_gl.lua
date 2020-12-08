@@ -3,7 +3,7 @@
 project "ref_gl"
 	kind "SharedLib"
 	characterset "MBCS"
-    language "C"
+    language "C++"
 
 	targetdir ( "../build" )	-- Put our generated dll here
 	targetname ( "ref_gl" )
@@ -19,11 +19,11 @@ project "ref_gl"
 
 	files {
 		"*.h", 
-		"*.c",
-		"../game/q_shared.c",
-		"../win32/glw_imp.c",
-		"../win32/qgl_win.c",
-		"../win32/q_shwin.c",
+		"*.cpp",
+		"../game/q_shared.cpp",
+		"../win32/glw_imp.cpp",
+		"../win32/qgl_win.cpp",
+		"../win32/q_shwin.cpp",
 		"../client/qmenu.h", 
 		"../client/ref.h", 
 		"../game/q_shared.h", 
@@ -34,7 +34,7 @@ project "ref_gl"
 
 	vpaths {
 	   ["Header Files"] =  { "*.h", "../client/qmenu.h", "../client/ref.h", "../game/q_shared.h", "../qcommon/qcommon.h", "../qcommon/qfiles.h" },
-	   ["Source Files"] =  { "*.c", "../game/q_shared.c", "../win32/glw_imp.c", "../win32/qgl_win.c", "../win32/q_shwin.c" },
+	   ["Source Files"] =  { "*.cpp", "../game/q_shared.cpp", "../win32/glw_imp.cpp", "../win32/qgl_win.cpp", "../win32/q_shwin.cpp" },
 	   ["Resource Files"] = "ref_gl.def"	-- This is requiered by the engine to properly load the ref_gl dll
 	}
 

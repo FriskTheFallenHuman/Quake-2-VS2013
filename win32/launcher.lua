@@ -3,7 +3,7 @@
 project "launcher"
 	kind "WindowedApp"
 	characterset "MBCS"
-    language "C"
+    language "C++"
 
 	targetdir ( "../build" )	-- Put our generated dll here
 	targetname ( "launcher" )
@@ -20,25 +20,25 @@ project "launcher"
 
 	files {
 		"*.h", 
-		"*.c",
+		"*.cpp",
 		"*.ico",
 		"*.rc",
-		"../server/*.c",
+		"../server/*.cpp",
 		"../server/*.h",
-		"../client/*.c",
+		"../client/*.cpp",
 		"../client/*.h",
-		"../qcommon/*.c",
+		"../qcommon/*.cpp",
 		"../qcommon/*.h",
-		"../ref_gl/gl_rmain.c",
-		"../game/m_flash.c",
-		"../game/q_shared.c",
+		"../ref_gl/gl_rmain.cpp",
+		"../game/m_flash.cpp",
+		"../game/q_shared.cpp",
 		"../game/game.h",
 		"../game/q_shared.h"
 	}
 
 	vpaths {
 	   ["Header Files"] =  { "*.h", "../server/*.h", "../client/*.h", "../qcommon/*.h", "../game/q_shared.h", "../game/game.h" },
-	   ["Source Files"] =  { "*.c", "../server/*.c", "../client/*.c", "../qcommon/*.c", "../game/q_shared.c", "../game/m_flash.c", "../ref_gl/gl_rmain.c", },
+	   ["Source Files"] =  { "*.cpp", "../server/*.cpp", "../client/*.cpp", "../qcommon/*.cpp", "../game/q_shared.cpp", "../game/m_flash.cpp", "../ref_gl/gl_rmain.cpp", },
 	   ["Resource Files"] = { "*.ico", "*.rc" },
 	}
 
